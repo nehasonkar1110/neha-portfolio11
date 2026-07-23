@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Neha Sonkar | Software Developer</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',Arial,sans-serif;
+    color:#222;
+    background:#ffffff;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    height:70px;
+    width:100%;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 8%;
+
+    background:white;
+
+    box-shadow:0 3px 15px rgba(0,0,0,0.08);
+
+}
+
+
+.logo{
+
+    flex:1;
+
+    font-size:28px;
+
+    color:#4b0082;
+
+    font-weight:700;
+
+}
+
+
+.navbar a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    margin-left:35px;
+
+    font-size:17px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+
+.navbar a:hover{
+
+    color:#4b0082;
+
+}
+
+
+
+/* ================= HERO ================= */
+
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-around;
+
+    padding:60px 8%;
+
+
+    background:
+
+    linear-gradient(
+    120deg,
+    #f5f0ff,
+    #ffffff
+    );
+
+}
+
+
+
+.hero-content{
+
+    max-width:600px;
+
+}
+
+
+
+.hero-content h4{
+
+    font-size:22px;
+
+    color:#555;
+
+}
+
+
+.hero-content h1{
+
+    font-size:55px;
+
+    color:#4b0082;
+
+    margin:10px 0;
+
+}
+
+
+
+.hero-content h2{
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+}
+
+
+.hero-content p{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    color:#555;
+
+}
+
+
+
+.hero-btn{
+
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:12px 30px;
+
+    background:#4b0082;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+
+
+.hero-btn:hover{
+
+    background:#6a0dad;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+/* PROFILE IMAGE */
+
+
+.profile{
+
+    width:330px;
+
+    height:330px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:8px solid white;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.2);
+
+}
+
+
+
+
+/* COMMON HEADING */
+
+
+.section-title{
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin:70px 0 40px;
+
+    color:#4b0082;
+
+}
+
+/* ================= PROJECT SECTION ================= */
+
+
+.projects-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+    padding:0 8%;
+
+}
+
+
+
+.project-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.project-card img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+
+
+.project-card h3{
+
+    color:#4b0082;
+
+    margin:20px 0 10px;
+
+    font-size:22px;
+
+}
+
+
+
+.project-card p{
+
+    color:#555;
+
+    line-height:1.6;
+
+}
+
+
+
+.tech{
+
+    margin-top:15px;
+
+    font-weight:600;
+
+}
+
+
+
+.project-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:8px 20px;
+
+    border-radius:20px;
+
+    background:#4b0082;
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+
+
+
+/* ================= ABOUT ================= */
+
+
+.about{
+
+    margin-top:80px;
+
+    padding:60px 8%;
+
+    background:#f6f2ff;
+
+    display:flex;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+
+
+.about img{
+
+    width:300px;
+
+    border-radius:20px;
+
+}
+
+
+
+.about-text{
+
+    flex:1;
+
+}
+
+
+
+.about-text p{
+
+    line-height:1.8;
+
+    font-size:17px;
+
+    color:#555;
+
+}
+
+
+
+.info-box{
+
+    margin-top:25px;
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+
+
+.info-box div{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px #ddd;
+
+}
+
+
+
+/* ================= SKILLS ================= */
+
+
+.skills-container{
+
+    padding:0 8%;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.skill-card{
+
+    text-align:center;
+
+    padding:25px;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.skill-card img{
+
+    height:60px;
+
+    width:60px;
+
+    object-fit:contain;
+
+}
+
+
+
+.skill-card h3{
+
+    color:#4b0082;
+
+    margin:15px;
+
+}
+
+
+
+.skill-card p{
+
+    color:#555;
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.about{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+
+.hero{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+}
+
+
+
+.profile{
+
+    width:230px;
+
+    height:230px;
+
+}
+
+
+.navbar{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+}
+
+
+.navbar a{
+
+    margin:8px;
+
+}
+
+
+}
+
+/* ================= CONTACT SECTION ================= */
+
+
+.contact-section{
+
+    padding:70px 8%;
+
+    background:#f6f2ff;
+
+    text-align:center;
+
+}
+
+
+
+.contact-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    margin-top:40px;
+
+}
+
+
+
+.contact-card{
+
+    background:white;
+
+    width:280px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.1);
+
+}
+
+
+
+.contact-card h3{
+
+    color:#4b0082;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.contact-card p{
+
+    color:#555;
+
+}
+
+
+
+.social{
+
+    margin-top:40px;
+
+}
+
+
+
+.social a{
+
+    display:inline-block;
+
+    margin:10px;
+
+    padding:12px 25px;
+
+    background:#4b0082;
+
+    color:white;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+
+.social a:hover{
+
+    background:#6a0dad;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* ================= FOOTER ================= */
+
+
+footer{
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+
+
+footer span{
+
+    color:#b57cff;
+
+}
+
+
+
+
+/* MOBILE FIX */
+
+
+@media(max-width:768px){
+
+
+.hero-content h1{
+
+    font-size:40px;
+
+}
+
+
+
+.hero-content h2{
+
+    font-size:25px;
+
+}
+
+
+.section-title{
+
+    font-size:30px;
+
+}
+
+
+.contact-card{
+
+    width:90%;
+
+}
+
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+
+<nav class="navbar">
+
+
+<div class="logo">
+Neha Sonkar
+</div>
+
+
+<a href="#home">Home</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#about">About</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#contact">Contact</a>
+
+
+</nav>
+
+
+
+
+<!-- ================= HERO SECTION ================= -->
+
+
+<section class="hero" id="home">
+
+
+<div class="hero-content">
+
+
+<h4>Hello, I'm</h4>
+
+
+<h1>Neha Sonkar</h1>
+
+
+<h2>Software Developer</h2>
+
+
+
+<p>
+
+Full Stack Developer skilled in React.js,
+Django, REST API, Python, PHP and Database
+Management.
+
+I build responsive and scalable web applications
+with clean and efficient code.
+
+</p>
+
+
+
+<a class="hero-btn"
+onclick="window.open('files/cv resume neha.pdf','_blank')">
+
+Download Resume
+
+</a>
+
+
+</div>
+
+
+
+
+<div>
+
+<img 
+src="neha image.jpeg"
+class="profile"
+alt="Neha Profile">
+
+</div>
+
+
+
+</section>
+<!-- ================= PROJECT SECTION ================= -->
+
+
+<section id="projects">
+
+
+<h2 class="section-title">
+My Projects
+</h2>
+
+
+
+<div class="projects-container">
+  <div class="project-card">
+
+
+<img src="task management.jpg" alt="Task Management System">
+
+
+<h3>
+Task Management System
+</h3>
+
+
+<p>
+
+Developed a full-stack Task Management System
+for managing organizations, users, projects and tasks.
+
+Features:
+User Authentication, Role Based Access
+(Admin, Manager, Employee),
+Organization Management,
+Project Management,
+Task Assignment,
+Task Status Tracking,
+Comments and Notifications.
+
+</p>
+
+
+<div class="tech">
+
+Technologies:
+React.js | Django REST Framework | Python | SQL | JWT Authentication
+
+</div>
+
+
+<!-- <a href="https://github.com/your-github/task-management-system" 
+class="project-btn"
+target="_blank">
+
+View Project
+
+</a> -->
+
+
+</div>
+
+
+
+<div class="project-card">
+
+
+<img src="cs1.jpeg">
+
+
+<h3>
+CSPDCL Online Hiring Portal
+</h3>
+
+
+<p>
+
+Developed an online recruitment portal
+to automate candidate hiring process.
+
+Features:
+Candidate Registration,
+Job Posting,
+Application Submission,
+Document Upload.
+
+</p>
+
+
+<div class="tech">
+
+Technologies:
+React.js | Django REST | Python | SQL
+
+</div>
+
+
+<!-- <a href="#" class="project-btn">
+View Project
+</a> -->
+
+
+</div>
+
+<div class="project-card">
+
+
+<img src="apex bank.jpg" alt="CG Apex Bank">
+
+
+<h3>
+CG Apex Bank Management System
+</h3>
+
+
+<p>
+
+Developed a banking management system using PHP
+for managing customers, accounts and banking
+transactions.
+
+Features:
+Customer Management,
+Account Management,
+Deposit & Withdrawal,
+Transaction Records,
+Admin Panel.
+
+</p>
+
+
+<div class="tech">
+
+Technologies:
+Core PHP | MySQL | HTML | CSS | JavaScript
+
+</div>
+
+
+<a href="https://cgapexbank.com/" 
+class="project-btn"
+target="_blank">
+
+View Project
+
+</a>
+
+
+</div>
+
+
+
+<div class="project-card">
+
+
+<img src="loan.png">
+
+
+<h3>
+KSB Capital Loan System
+</h3>
+
+
+<p>
+
+Developed finance management system
+for handling customers, loans and transactions.
+
+</p>
+
+
+<div class="tech">
+
+Technologies:
+Core PHP | MySQL
+
+</div>
+
+
+<a href="https://ksbcapital.in/" class="project-btn">
+View Project
+</a>
+
+
+</div>
+
+
+<div class="project-card">
+
+
+<img src="shg.jpg">
+
+
+<h3>
+Self Help Group Management System
+</h3>
+
+
+<p>
+
+Academic project developed for managing
+members, savings, loans and transactions.
+
+Designed a simple interface for rural users.
+
+</p>
+
+
+<div class="tech">
+
+Technologies:
+Java | MySQL
+
+</div>
+
+
+<!-- <a href="#" class="project-btn">
+View Project
+</a> -->
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ================= ABOUT ================= -->
+
+
+
+<section class="about" id="about">
+
+
+<img src="video.jpg">
+
+
+<div class="about-text">
+
+
+<h2 class="section-title">
+
+About Me
+
+</h2>
+
+
+
+<p>
+
+
+I am an aspiring Full Stack Developer
+with MSc Information Technology background.
+
+I have experience in developing web
+applications using React.js, Django,
+REST API, PHP and SQL.
+
+I enjoy building scalable applications,
+solving problems and learning new
+technologies.
+
+
+
+</p>
+
+
+
+
+<div class="info-box">
+
+
+<div>
+
+<h3>
+Education
+</h3>
+
+<p>
+MSc Information Technology
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>
+Experience
+</h3>
+
+<p>
+Software Developer
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= SKILLS ================= -->
+
+
+
+<section id="skills">
+
+
+<h2 class="section-title">
+
+Technical Skills
+
+</h2>
+
+
+
+
+<div class="skills-container">
+
+
+
+<div class="skill-card">
+
+<img src="python.jpg">
+
+<h3>
+Python
+</h3>
+
+<p>
+Programming Language
+</p>
+
+</div>
+
+
+
+
+<div class="skill-card">
+
+<img src="react js.png">
+
+<h3>
+React JS
+</h3>
+
+<p>
+Frontend Development
+</p>
+
+</div>
+
+<!-- HTML Skill -->
+
+<div class="skill-card">
+
+<img src="html.png" alt="HTML">
+
+<h3>
+HTML
+</h3>
+
+<p>
+Web Structure Development
+</p>
+
+</div>
+
+
+<!-- CSS Skill -->
+
+<div class="skill-card">
+
+<img src="css.png" alt="CSS">
+
+<h3>
+CSS
+</h3>
+
+<p>
+Responsive UI Design
+</p>
+
+</div>
+
+
+
+<!-- JavaScript Skill -->
+
+<div class="skill-card">
+
+<img src="javascript.png" alt="JavaScript">
+
+<h3>
+JavaScript
+</h3>
+
+<p>
+Frontend Logic & Interaction
+</p>
+
+</div>
+
+
+
+<!-- PHP Skill -->
+
+<div class="skill-card">
+
+<img src="php.jpg" alt="PHP">
+
+<h3>
+PHP
+</h3>
+
+<p>
+Backend Web Development
+</p>
+
+</div>
+
+
+
+
+
+<div class="skill-card">
+
+<img src="django.jpg">
+
+<h3>
+Django
+</h3>
+
+<p>
+Backend Development
+</p>
+
+</div>
+
+
+
+
+
+<div class="skill-card">
+
+<img src="db.jpg">
+
+<h3>
+Database
+</h3>
+
+<p>
+MySQL | SQLite
+</p>
+
+</div>
+
+
+
+
+
+<div class="skill-card">
+
+<img src="github.png">
+
+<h3>
+GitHub
+</h3>
+
+<p>
+Version Control
+</p>
+
+</div>
+
+
+
+
+
+<div class="skill-card">
+
+<img src="api.jpg">
+
+<h3>
+REST API
+</h3>
+
+<p>
+JWT Authentication
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+      <!-- ================= CONTACT ================= -->
+
+
+<section class="contact-section" id="contact">
+
+
+<h2 class="section-title">
+
+Contact Me
+
+</h2>
+
+
+
+<div class="contact-container">
+
+
+
+<div class="contact-card">
+
+
+<h3>
+Email
+</h3>
+
+
+<p>
+nsonkar2020@gmail.com
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="contact-card">
+
+
+<h3>
+Phone
+</h3>
+
+
+<p>
+7987242578
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="contact-card">
+
+
+<h3>
+Location
+</h3>
+
+
+<p>
+Raipur, Chhattisgarh
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- <div class="social">
+
+
+<a href="https://github.com/" target="_blank">
+
+GitHub
+
+</a>
+
+
+
+<a href="https://linkedin.com/" target="_blank">
+
+LinkedIn
+
+</a>
+
+
+
+<a href="mailto:nsonkar2020@gmail.com">
+
+Email Me
+
+</a> -->
+
+
+
+<!-- </div> -->
+
+
+
+</section>
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
+<footer>
+
+
+<p>
+
+Copyright © 2026 
+
+<span>
+Neha Sonkar
+</span>
+
+| All Rights Reserved
+
+</p>
+
+
+</footer>
+
+
+
+</body>
+
+</html>
+
+    </div> 
+  </div>
+</body>
+</html>
